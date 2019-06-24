@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Timed Trivia Quiz!</title>
+
+    <!-- Link Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<!---------------------------------------------------------------------------------->
+
+<body>
+<h1>Timed Trivia Quiz!</h1>
+
+<!-- Quiz Contents -->
+<div class="container">
+    <div class="main-container">
+
+    <div class="row">
+        <div class="instructions">
+            <p>Finish the quiz before you run out of time!</p>
+        </div>
+    </div> 
+
+<!-- 30 Second Countdown -->
+<div id="some_div"></div>
+<br>
+
+<!-- Quiz with Bootstrap Checkbox Format  -->
+
+    <p>Question 1</p>
+    
+    <div class="custom-control custom-radio custom-control-inline">  
+        <input type="radio" id="customRadioInline1" name="customRadioInline1" data-corr="true" class="custom-control-input">
+        <label class="custom-control-label" for="customRadioInline1">Answer 1</label>
+    </div>
+    
+    <div class="custom-control custom-radio custom-control-inline">
+        <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+        <label class="custom-control-label" for="customRadioInline2">Answer 2</label>
+    </div> 
+    
+    <div class="custom-control custom-radio custom-control-inline"> 
+        <input type="radio" id="customRadioInline3" name="customRadioInline1" class="custom-control-input">
+        <label class="custom-control-label" for="customRadioInline3">Answer 3</label>
+    </div>
+    
+    <div class="custom-control custom-radio custom-control-inline">
+        <input type="radio" id="customRadioInline4" name="customRadioInline1" class="custom-control-input">
+        <label class="custom-control-label" for="customRadioInline4">Answer 4</label>
+    </div>  
+    <br>
+    <br>
+    
+    
+    <p>Question 2</p>
+    
+    <div class="custom-control custom-radio custom-control-inline">  
+        <input type="radio" id="customRadioInline12" name="customRadioInline12" class="custom-control-input">
+        <label class="custom-control-label" for="customRadioInline12">Answer 1</label>
+    </div>
+    
+    <div class="custom-control custom-radio custom-control-inline">
+        <input type="radio" id="customRadioInline22" name="customRadioInline12" data-corr="true" class="custom-control-input">
+        <label class="custom-control-label" for="customRadioInline22">Answer 2</label>
+    </div> 
+    
+    <div class="custom-control custom-radio custom-control-inline"> 
+        <input type="radio" id="customRadioInline32" name="customRadioInline12" class="custom-control-input">
+        <label class="custom-control-label" for="customRadioInline32">Answer 3</label>
+    </div>
+    
+    <div class="custom-control custom-radio custom-control-inline">
+        <input type="radio" id="customRadioInline42" name="customRadioInline12" class="custom-control-input">
+        <label class="custom-control-label" for="customRadioInline42">Answer 4</label>
+    </div> 
+    <br>
+    <br>
+
+    <p>Question 3</p>
+    
+    <div class="custom-control custom-radio custom-control-inline">  
+        <input type="radio" id="customRadioInline1" name="customRadioInline1" data-corr="true" class="custom-control-input">
+        <label class="custom-control-label" for="customRadioInline1">Answer 1</label>
+    </div>
+    
+    <div class="custom-control custom-radio custom-control-inline">
+        <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+        <label class="custom-control-label" for="customRadioInline2">Answer 2</label>
+    </div> 
+    
+    <div class="custom-control custom-radio custom-control-inline"> 
+        <input type="radio" id="customRadioInline3" name="customRadioInline1" class="custom-control-input">
+        <label class="custom-control-label" for="customRadioInline3">Answer 3</label>
+    </div>
+    
+    <div class="custom-control custom-radio custom-control-inline">
+        <input type="radio" id="customRadioInline4" name="customRadioInline1" class="custom-control-input">
+        <label class="custom-control-label" for="customRadioInline4">Answer 4</label>
+    </div>  
+    
+    <br>
+    <br>
+    
+    
+    <p>Question 4</p>
+    
+    <div class="custom-control custom-radio custom-control-inline">  
+        <input type="radio" id="customRadioInline12" name="customRadioInline12" class="custom-control-input">
+        <label class="custom-control-label" for="customRadioInline12">Answer 1</label>
+    </div>
+    
+    <div class="custom-control custom-radio custom-control-inline">
+        <input type="radio" id="customRadioInline22" name="customRadioInline12" data-corr="true" class="custom-control-input">
+        <label class="custom-control-label" for="customRadioInline22">Answer 2</label>
+    </div> 
+    
+    <div class="custom-control custom-radio custom-control-inline"> 
+        <input type="radio" id="customRadioInline32" name="customRadioInline12" class="custom-control-input">
+        <label class="custom-control-label" for="customRadioInline32">Answer 3</label>
+    </div>
+    
+    <div class="custom-control custom-radio custom-control-inline">
+        <input type="radio" id="customRadioInline42" name="customRadioInline12" class="custom-control-input">
+        <label class="custom-control-label" for="customRadioInline42">Answer 4</label>
+    </div> 
+    
+    
+    
+    
+    <br>
+    <br>
+    <!-- Submit BUtton -->
+    <button class="btn btn-primary" id="submit" type="submit">Submit Quiz</button>
+</div>
+</div>
+
+
+<!---------------------------------------------------------------------------- -->
+<!-- jQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Script -->
+<script type="text/javascript" src="assets/javascript/app.js"></script>
+
+</body>
+</html>
