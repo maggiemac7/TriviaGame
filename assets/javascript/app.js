@@ -3,7 +3,7 @@
 var timeLeft = 30;
 var elem = document.getElementById('some_div');
 var timerId = setInterval(countdown, 1000);
-var totalQuestions = 2 //this must be updated to match actual number of questions
+var totalQuestions = 4 //this must be updated to match actual number of questions
 function countdown() {
     if (timeLeft == -1) {
         clearInterval(timerId);
